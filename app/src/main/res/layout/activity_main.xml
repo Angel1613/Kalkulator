@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Tlo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="367dp"
+        android:layout_height="120dp"
+        android:layout_margin="0dp"
+        android:background="#FFFFFF"
+        android:gravity="bottom|right"
+        android:padding="0dp"
+        android:text="0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="90dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="148dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="7"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="4"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="6"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickOperator"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlus"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="148dp"
+        android:gravity="bottom"
+        android:onClick="onClickOperator"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonRazy"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickOperator"
+        android:text="*"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinus"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickClear"
+        android:text="C"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonClear"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickEqual"
+        android:text="="
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button0"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/buttonDzielenie"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickOperator"
+        android:text="/"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonEqual"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRazy"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="148dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="8"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="148dp"
+        android:gravity="bottom"
+        android:onClick="onClickNumer"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorAccent"
+        tools:hapticFeedbackEnabled="false" />
+</android.support.constraint.ConstraintLayout>
